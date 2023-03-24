@@ -7,9 +7,12 @@ import Contact from '@/components/Contact/Contact'
 import Details from '@/components/MoreServices/Details'
 import Card from '@/components/AboutMe/Card'
 import Header from '@/components/Header/Header'
+import { Fade } from 'react-awesome-reveal'
 
 
 export default function Home() {
+
+
   return (
     <>
       <Head>
@@ -18,11 +21,21 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <SimpleThreeColumns />
-      <Details />
-      <Card />
-      <Contact />
+      <Fade direction="down" cascade onVisibilityChange={(inView) => console.log(inView)}>
+        <Header />
+      </Fade>
+      <Fade direction="down" cascade>
+        <SimpleThreeColumns />
+      </Fade>
+      <Fade direction="down" cascade>
+        <Details />
+      </Fade>
+      <Fade direction="down" cascade>
+        <Card />
+      </Fade>
+      <Fade direction="down" cascade>
+        <Contact />
+      </Fade>
     </>
   )
 }

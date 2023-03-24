@@ -1,10 +1,10 @@
-import { Box, Flex, Icon, SimpleGrid, chakra, UnorderedList, ListItem } from "@chakra-ui/react";
-import { MdOutlineEmail } from "react-icons/md";
-import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
+import { Box, Flex, Text, SimpleGrid, chakra, UnorderedList, ListItem, Image } from "@chakra-ui/react";
 import { types } from "@/utils/types";
+import '@fontsource/belleza'
 
 
 const OurServices = () => {
+
   const Feature = (props: any) => {
     return (
       <Box>
@@ -21,18 +21,12 @@ const OurServices = () => {
           }}
           bg={`${props.color}.100`}
         >
-          <Icon
-            boxSize={5}
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            {props.icon}
-          </Icon>
+          <Image src={props.image} alt={props.title} w={'200'} h={8} />
         </Flex>
         <chakra.h3
           mb={2}
-          fontWeight="semibold"
+          fontWeight="bold"
+          fontFamily={'Belleza'}
           lineHeight="shorter"
           _light={{
             color: "gray.900",
@@ -78,36 +72,31 @@ const OurServices = () => {
             lg: "center",
           }}
         >
-          <chakra.p
-            mt={2}
-            fontSize={{
-              base: "3xl",
-              sm: "4xl",
-            }}
-            fontFamily="Roboto"
-            fontWeight="extrabold"
-            letterSpacing="tight"
-            _light={{
-              color: "gray.900",
-            }}
+          <Text
+            fontSize={{ base: "3xl", md: "4xl" }}
+            color="black"
+            textTransform="uppercase"
+            fontFamily={'Belleza'}
+            fontWeight="bold"
+            textShadow={'1px 2px 2px #919191'}
           >
             {types.Features.title}
-          </chakra.p>
-          <chakra.p
-            mt={4}
+          </Text>
+          {/* <chakra.p
+            mt={2}
             maxW="2xl"
             fontSize="xl"
             mx={{
               lg: "auto",
             }}
-            fontFamily="Roboto"
+            fontFamily="Belleza"
             color="gray.500"
             _dark={{
               color: "gray.400",
             }}
           >
             Saiba mais sobre nossos serviços
-          </chakra.p>
+          </chakra.p> */}
         </Box>
         <SimpleGrid
           columns={{
@@ -124,16 +113,10 @@ const OurServices = () => {
           mt={6}
         >
           <Feature
-            color="red"
             title={types.Features.beneficiosPrevidenciarios}
-            icon={
-              <path
-                fillRule="evenodd"
-                d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
-                clipRule="evenodd"
-              />
-            }
+            image="image2.png"
           >
+
             <UnorderedList>
               <ListItem>
                 {types.Features.descricaoBeneficio1}

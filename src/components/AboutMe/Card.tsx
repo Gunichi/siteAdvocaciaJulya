@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { AiFillInstagram } from 'react-icons/ai';
 import { RiWhatsappFill } from 'react-icons/ri';
+import '@fontsource/belleza'
 
 export default function Card() {
   return (
@@ -42,17 +43,19 @@ export default function Card() {
             right: 3,
           }}
         />
-        <Heading fontSize={'2xl'} fontFamily={'body'}>
+        <Heading fontSize={'2xl'} fontFamily={'Belleza'} fontWeight={'bold'}>
           {types.About.name}
         </Heading>
-        <Text fontWeight={600} color={'gray.500'} mb={4}>
-          ~ {types.About.description} ~{"\n"}
+        <Text fontWeight={600} color={'gray.500'} mb={4} fontFamily={'Belleza'}>
+          {types.About.description} <br />
           {types.About.description1}
         </Text>
         <Text
           textAlign={'center'}
           color={useColorModeValue('gray.700', 'gray.400')}
-          px={3}>
+          px={3}
+          fontFamily={'Belleza'}
+        >
           "{types.About.description2}"
         </Text>
 

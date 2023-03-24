@@ -4,14 +4,14 @@ import {
   Box,
   useColorModeValue,
   Flex,
-  IconButton,
   Heading,
   Button,
   Stack,
+  Text
 } from "@chakra-ui/react";
-import { AiOutlineMenu } from "react-icons/ai";
+import '@fontsource/belleza'
 
-export default function Header(){
+export default function Header() {
   const bg = useColorModeValue("red", "red.800");
 
   return (
@@ -23,14 +23,14 @@ export default function Header(){
         bgPos="center"
         bgSize="cover"
       >
-        <chakra.nav bg={''}>
+        <chakra.nav bg={'blackAlpha.800'}>
           <Box mx="auto" px={6} py={3} maxW="full">
             <Box
               display={{ md: "flex" }}
               alignItems={{ md: "center" }}
-              justifyContent={{ md: "space-between" }}
+              justifyContent={{ md: "flex-start" }}
             >
-              <Flex alignItems="center" justifyContent="space-between">
+              {/* <Flex alignItems="center" justifyContent="space-between">
                 <Box fontSize="xl" fontWeight="semibold" color="red.700">
                   <chakra.a
                     fontSize={["xl", "xl", "2xl"]}
@@ -53,89 +53,84 @@ export default function Header(){
                     variant="ghost"
                   />
                 </Flex>
-              </Flex>
+              </Flex> */}
+              <Box fontSize="xl" fontWeight="semibold" color="red.700" display={{ base: "none", md: "flex" }} ml={10}>
+                <chakra.a
+                  fontSize={["xl", "xl", "2xl"]}
+                  color="yellow.500"
+                  cursor="pointer"
+                  _hover={{
+                    color: "white",
+                    textDecoration: "underline",
+                  }}
+                  fontFamily={'Belleza'}
+                >
+                  Inicio
+                </chakra.a>
+                <chakra.a
+                  ml={[4, 4, 6]}
+                  fontSize={["xl", "xl", "2xl"]}
+                  color="yellow.500"
+                  _dark={{ color: "white" }}
+                  cursor="pointer"
+                  _hover={{
+                    color: "white",
+                    textDecoration: "underline",
+                  }}
+                  fontFamily={'Belleza'}
+                >
+                  Nossas soluções
+                </chakra.a>
+                <chakra.a
+                  fontSize={["xl", "xl", "2xl"]}
+                  ml={[4, 4, 6]}
+                  color="yellow.500"
+                  cursor="pointer"
+                  _hover={{
+                    color: "white",
+                    textDecoration: "underline",
+                  }}
+                  fontFamily={'Belleza'}
+                >
+                  Contato
+                </chakra.a>
 
-              <Box display={["none", "flex"]} alignItems={{ md: "center" }}>
-                <chakra.a
-                  display="block"
-                  mx={4}
-                  mt={[2, 0]}
-                  fontSize="sm"
-                  color="gray.700"
-                  _dark={{ color: "gray.200" }}
-                  textTransform="capitalize"
-                  _hover={{ color: "brand.400", _dark: { color: "blue.400" } }}
-                >
-                  Web developers
-                </chakra.a>
-                <chakra.a
-                  display="block"
-                  mx={4}
-                  mt={[2, 0]}
-                  fontSize="sm"
-                  color="gray.700"
-                  _dark={{ color: "gray.200" }}
-                  textTransform="capitalize"
-                  _hover={{ color: "brand.400", _dark: { color: "blue.400" } }}
-                >
-                  Web Designers
-                </chakra.a>
-                <chakra.a
-                  display="block"
-                  mx={4}
-                  mt={[2, 0]}
-                  fontSize="sm"
-                  color="gray.700"
-                  _dark={{ color: "gray.200" }}
-                  textTransform="capitalize"
-                  _hover={{ color: "brand.400", _dark: { color: "blue.400" } }}
-                >
-                  UI/UX Designers
-                </chakra.a>
-                <chakra.a
-                  display="block"
-                  mx={4}
-                  mt={[2, 0]}
-                  fontSize="sm"
-                  color="gray.700"
-                  _dark={{ color: "gray.200" }}
-                  textTransform="capitalize"
-                  _hover={{ color: "brand.400", _dark: { color: "blue.400" } }}
-                >
-                  Contact
-                </chakra.a>
               </Box>
             </Box>
           </Box>
         </chakra.nav>
         <Flex
           align="center"
-          pos="relative"
           justify="left"
           boxSize="full"
           px={[4, 4, 8]}
+          bg='blackAlpha.800'
         >
-          <Stack textAlign="center" alignItems="center" spacing={6}>
+          <Stack alignItems="center" spacing={6}>
             <Heading
               fontSize={["4xl", "3xl", "5xl"]}
               fontWeight="semibold"
               color="white"
               textTransform="uppercase"
+              fontFamily={'Belleza'}
             >
               ADVOCACIA <br /> PREVIDENCIÁRIA
-            </Heading>       
-            <chakra.p
+            </Heading>
+            <Text
               fontSize={["sm", "sm", "md"]}
               color="white"
               textTransform="uppercase"
+              fontFamily={'Belleza'}
+              fontWeight="bold"
             >
               Precisa de ajuda para entender <br />
               quais benefícios do INSS você tem direito?
-            </chakra.p>
+            </Text>
             <Button
               colorScheme="whatsapp"
               textTransform="uppercase"
               w="fit-content"
+              fontFamily={'Belleza'}
             >
               Fale comigo pelo WhatsApp
             </Button>

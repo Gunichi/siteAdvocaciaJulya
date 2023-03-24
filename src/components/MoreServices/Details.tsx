@@ -9,6 +9,7 @@ import {
   GridItem
 } from "@chakra-ui/react";
 import { types } from "@/utils/types";
+import '@fontsource/belleza'
 
 const Details = () => {
   const Feature = (props: any) => {
@@ -41,6 +42,8 @@ const Details = () => {
             _light={{
               color: "gray.900",
             }}
+            fontFamily="Belleza"
+            textShadow="1px 1px 2px #00000042"
           >
             {props.title}
           </chakra.dt>
@@ -50,6 +53,7 @@ const Details = () => {
             _dark={{
               color: "gray.400",
             }}
+            fontFamily="Belleza"
           >
             {props.children}
           </chakra.dd>
