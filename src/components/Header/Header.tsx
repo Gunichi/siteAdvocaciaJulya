@@ -33,7 +33,7 @@ export default function Header(){
               <Flex alignItems="center" justifyContent="space-between">
                 <Box fontSize="xl" fontWeight="semibold" color="red.700">
                   <chakra.a
-                    fontSize={["xl", , "2xl"]}
+                    fontSize={["xl", "xl", "2xl"]}
                     fontWeight="bold"
                     color="gray.800"
                     _dark={{ color: "white" }}
@@ -55,11 +55,11 @@ export default function Header(){
                 </Flex>
               </Flex>
 
-              <Box display={["none", , "flex"]} alignItems={{ md: "center" }}>
+              <Box display={["none", "flex"]} alignItems={{ md: "center" }}>
                 <chakra.a
                   display="block"
                   mx={4}
-                  mt={[2, , 0]}
+                  mt={[2, 0]}
                   fontSize="sm"
                   color="gray.700"
                   _dark={{ color: "gray.200" }}
@@ -71,7 +71,7 @@ export default function Header(){
                 <chakra.a
                   display="block"
                   mx={4}
-                  mt={[2, , 0]}
+                  mt={[2, 0]}
                   fontSize="sm"
                   color="gray.700"
                   _dark={{ color: "gray.200" }}
@@ -83,7 +83,7 @@ export default function Header(){
                 <chakra.a
                   display="block"
                   mx={4}
-                  mt={[2, , 0]}
+                  mt={[2, 0]}
                   fontSize="sm"
                   color="gray.700"
                   _dark={{ color: "gray.200" }}
@@ -95,7 +95,7 @@ export default function Header(){
                 <chakra.a
                   display="block"
                   mx={4}
-                  mt={[2, , 0]}
+                  mt={[2, 0]}
                   fontSize="sm"
                   color="gray.700"
                   _dark={{ color: "gray.200" }}
@@ -117,7 +117,7 @@ export default function Header(){
         >
           <Stack textAlign="center" alignItems="center" spacing={6}>
             <Heading
-              fontSize={["4xl", , "5xl"]}
+              fontSize={["4xl", "3xl", "5xl"]}
               fontWeight="semibold"
               color="white"
               textTransform="uppercase"
@@ -125,7 +125,7 @@ export default function Header(){
               ADVOCACIA <br /> PREVIDENCIÁRIA
             </Heading>       
             <chakra.p
-              fontSize={["sm", , "md"]}
+              fontSize={["sm", "sm", "md"]}
               color="white"
               textTransform="uppercase"
             >
