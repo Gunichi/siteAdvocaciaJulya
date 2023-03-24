@@ -103,7 +103,7 @@ export default function Header() {
           align="center"
           justify="left"
           boxSize="full"
-          px={[4, 4, 8]}
+          px={[10, 10, 8]}
           bg='blackAlpha.800'
         >
           <Stack alignItems="center" spacing={6}>
@@ -126,12 +126,7 @@ export default function Header() {
               Precisa de ajuda para entender <br />
               quais benefícios do INSS você tem direito?
             </Text>
-            <Button
-              colorScheme="whatsapp"
-              textTransform="uppercase"
-              w="fit-content"
-              fontFamily={'Belleza'}
-            >
+            <Button colorScheme="whatsapp" size="lg" fontFamily={'Belleza'}>
               Fale comigo pelo WhatsApp
             </Button>
           </Stack>

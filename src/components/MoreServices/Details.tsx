@@ -6,7 +6,8 @@ import {
   SimpleGrid,
   chakra,
   Stack,
-  GridItem
+  GridItem,
+  Button
 } from "@chakra-ui/react";
 import { types } from "@/utils/types";
 import '@fontsource/belleza'
@@ -98,7 +99,7 @@ const Details = () => {
           }}
         >
           
-          <GridItem colSpan={2}>
+          <GridItem colSpan={3}>
             <Stack
               spacing={{
                 base: 10,
@@ -130,6 +131,11 @@ const Details = () => {
             </Stack>
           </GridItem>
         </SimpleGrid>
+        <Flex justifyContent="center" alignItems="center" mt={10}>
+          <Button colorScheme="whatsapp" size="lg" px={10} fontFamily="Belleza">
+            Entre em contato pelo WhatsApp
+          </Button>
+        </Flex>
       </Box>
     </Flex>
   );

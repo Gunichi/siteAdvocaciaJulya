@@ -30,11 +30,12 @@ export const types = {
     title: 'SET_DETAILS',
     atendimento: 'Atendimento 100% online',
     descricaoAtendimento: 'Atendimento 100% online, sem sair de casa. Você pode nos enviar documentos por e-mail, WhatsApp ou Telegram. Você também pode nos enviar documentos por correio, se preferir.',
-    profissionals: 'Profissionais especializados',
-    descricaoProfissionals: 'Profissionais especializados em direito previdenciário, com mais de 10 anos de experiência.',
+    profissionals: 'Profissionais capacitada',
+    descricaoProfissionals: 'Profissional qualificada em questões relacionadas ao direito previdenciário, com amplo conhecimento teórico e prático',
     atendimentoHumanizado: 'Atendimento humanizado',
     descricaoAtendimentoHumanizado: 'Atendimento humanizado, com foco no cliente. Nós não somos robôs, e sim seres humanos, com sentimentos e emoções.',
-  },
+  
+    },
 
   Header: {
     title: 'ADVOCACIA PREVIDENCIÁRIA',

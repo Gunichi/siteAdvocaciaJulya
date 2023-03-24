@@ -28,16 +28,18 @@ export default function Contact() {
   return (
     <Container bg="gray.50" maxW="full" mt={0} centerContent overflow="hidden">
       <Box w="full" h="full" bg="gray.50" p={10}>
-        <Flex direction="column" align="center" justify="center">
-          <Heading as="h1" size="2xl" color="black" mb={5} fontFamily="Belleza" fontWeight="bold">
-            {types.Contact.title}
-          </Heading>
-        </Flex>
-        <Flex direction="column" align="center" justify="center">
-          <Text color="black" fontSize="xl" mt={2} mb={5} fontFamily="Belleza" fontWeight="bold">
-            {types.Contact.description}
-          </Text>
-        </Flex>
+        <Box px={[4, 4, 0]} w="full" h="full" p={10} borderRadius="lg">
+          <Flex direction="column" align="center" justify="center">
+            <Heading as="h1" size="2xl" color="black" mb={5} fontFamily="Belleza" fontWeight="bold">
+              {types.Contact.title}
+            </Heading>
+          </Flex>
+          <Flex direction="column" align="center" justify="center">
+            <Text color="black" fontSize="xl" mt={2} mb={5} fontFamily="Belleza" fontWeight="bold">
+              {types.Contact.description}
+            </Text>
+          </Flex>
+        </Box>
         <Box w="full" h="full" bg="gray.50" p={10}>
           <Box w="full" h="full" bg="white" p={10} borderRadius="lg" shadow="md">
           <SimpleGrid columns={[1, 2]} spacing={10}>

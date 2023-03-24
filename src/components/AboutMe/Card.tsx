@@ -56,7 +56,7 @@ export default function Card() {
           px={3}
           fontFamily={'Belleza'}
         >
-          "{types.About.description2}"
+          {types.About.description2}
         </Text>
 
         {/* <Stack align={'center'} justify={'center'} direction={'row'} mt={6}>
