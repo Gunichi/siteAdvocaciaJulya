@@ -7,9 +7,12 @@ import {
   Heading,
   Button,
   Stack,
-  Text
+  Text,
+  Image,
+  IconButton
 } from "@chakra-ui/react";
 import '@fontsource/belleza'
+import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Header() {
   const bg = useColorModeValue("red", "red.800");
@@ -30,7 +33,7 @@ export default function Header() {
               alignItems={{ md: "center" }}
               justifyContent={{ md: "flex-start" }}
             >
-              {/* <Flex alignItems="center" justifyContent="space-between">
+              <Flex alignItems="center" justifyContent="space-between">
                 <Box fontSize="xl" fontWeight="semibold" color="red.700">
                   <chakra.a
                     fontSize={["xl", "xl", "2xl"]}
@@ -42,7 +45,7 @@ export default function Header() {
                       _dark: { color: "gray.300" },
                     }}
                   >
-                    Brand
+                    <Image src="logo.png" alt="Logo" boxSize="100px" />
                   </chakra.a>
                 </Box>
 
@@ -53,7 +56,7 @@ export default function Header() {
                     variant="ghost"
                   />
                 </Flex>
-              </Flex> */}
+              </Flex> 
               <Box fontSize="xl" fontWeight="semibold" color="red.700" display={{ base: "none", md: "flex" }} ml={10}>
                 <chakra.a
                   fontSize={["xl", "xl", "2xl"]}
@@ -99,6 +102,7 @@ export default function Header() {
             </Box>
           </Box>
         </chakra.nav>
+        
         <Flex
           align="center"
           justify="left"
@@ -106,7 +110,7 @@ export default function Header() {
           px={[10, 10, 8]}
           bg='blackAlpha.800'
         >
-          <Stack alignItems="center" spacing={6}>
+          <Stack alignItems="center" spacing={6} textAlign="center">
             <Heading
               fontSize={["4xl", "3xl", "5xl"]}
               fontWeight="semibold"
@@ -117,7 +121,7 @@ export default function Header() {
               ADVOCACIA <br /> PREVIDENCIÁRIA
             </Heading>
             <Text
-              fontSize={["sm", "sm", "md"]}
+              fontSize={["sm", "md", "md"]}
               color="white"
               textTransform="uppercase"
               fontFamily={'Belleza'}
@@ -125,7 +129,7 @@ export default function Header() {
             >
               Precisa de ajuda para entender <br />
               quais benefícios do INSS você tem direito?
-            </Text>
+            </Text>            
             <Button colorScheme="whatsapp" size="lg" fontFamily={'Belleza'}>
               Fale comigo pelo WhatsApp
             </Button>

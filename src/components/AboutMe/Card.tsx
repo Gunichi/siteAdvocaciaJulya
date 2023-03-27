@@ -14,6 +14,14 @@ import { RiWhatsappFill } from 'react-icons/ri';
 import '@fontsource/belleza'
 
 export default function Card() {
+
+  const openImage = () => {
+    //Onclick image open the image 
+    window.open('fotoJulya.jpg', '_blank');
+
+  }
+
+
   return (
     <Center py={6} bg={useColorModeValue('white', 'inherit')}>
       <Box
@@ -27,21 +35,18 @@ export default function Card() {
         <Avatar
           size={'xl'}
           src={
-            'https://images.unsplash.com/photo-1520810627419-35e362c5dc07?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'
+            'fotoJulya.jpg'
           }
+          cursor={'pointer'}
+          onClick={openImage}
           mb={4}
           pos={'relative'}
-          _after={{
-            content: '""',
-            w: 4,
-            h: 4,
-            bg: 'green.300',
-            border: '2px solid white',
-            rounded: 'full',
-            pos: 'absolute',
-            bottom: 0,
-            right: 3,
+          _hover={{
+            boxShadow: '2xl',
+            transform: 'scale(2)',
           }}
+
+          
         />
         <Heading fontSize={'2xl'} fontFamily={'Belleza'} fontWeight={'bold'}>
           {types.About.name}

@@ -41,7 +41,6 @@ export default function Contact() {
           </Flex>
         </Box>
         <Box w="full" h="full" bg="gray.50" p={10}>
-          <Box w="full" h="full" bg="white" p={10} borderRadius="lg" shadow="md">
           <SimpleGrid columns={[1, 2]} spacing={10}>
             <FormControl id="name" isRequired>
               <FormLabel fontFamily="Belleza" fontWeight="bold">{types.Contact.formName}</FormLabel>
@@ -98,7 +97,6 @@ export default function Contact() {
               {types.Contact.formSubmit}
             </Button>
           </Flex>
-          </Box>
         </Box>
       </Box>
     </Container>
