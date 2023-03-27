@@ -110,7 +110,7 @@ export default function Header() {
           px={[10, 10, 8]}
           bg='blackAlpha.800'
         >
-          <Stack alignItems="center" spacing={6} textAlign="center">
+          <Stack alignItems="center" spacing={6} textAlign="left">
             <Heading
               fontSize={["4xl", "3xl", "5xl"]}
               fontWeight="semibold"
